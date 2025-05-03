@@ -65,13 +65,9 @@ variant-calling-workflow/
 
 ## Pipeline Overview
 
-![Alt text](./assets/graphviz.svg)
-<img src="./assets/graphviz.svg">
-  
 
 The pipeline performs the following steps:
 
-  
 
 1.  **FASTQC**: Quality control of input FASTQ files
 
@@ -83,7 +79,7 @@ The pipeline performs the following steps:
 
 5.  **BCFtools**: Calling variants to produce a final VCF file
 
-  
+![Alt text](./assets/graphviz.svg)  
   
   
 
