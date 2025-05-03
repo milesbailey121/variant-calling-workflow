@@ -5,9 +5,9 @@
 nextflow.enable.dsl=2
 
 
-params.outdir = "results"
-params.genome = "data/genome/ecoli_rel606.fasta"
-params.reads = "data/trimmed_reads/*_{1,2}.trim.fastq.gz"
+// params.outdir = "results"
+// params.genome = "data/genome/ecoli_rel606.fasta"
+// params.reads = "data/trimmed_reads/*_{1,2}.trim.fastq.gz"
 
 
 
@@ -183,8 +183,6 @@ process VCFUTILS {
     vcfutils.pl varFilter ${variants_vcf} > "${sample_id}_filtered_variants.vcf"
     """
 }
-
-
 
 workflow.onComplete {
    println ( workflow.success ? """
